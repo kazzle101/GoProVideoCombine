@@ -20,16 +20,16 @@ Utility to combine GoPro video files into one large file using the creation_time
 optional arguments:
   -h, --help            show this help message and exit
   -s SOURCE, --source SOURCE
-                        source directory
+                        source directory containing GoPro .mp4 files
   -o OUTPUT, --output OUTPUT
-                        output dir/file (mp4)
+                        output dir/filename.mp4
   -p, --srcpath         save the output file to the same location as the source directory
   -m, --logmetadata     save the metadata as a readable json file
   --delete              delete source files after combining
 
 As well as the output.mp4, the files list, a log file and opionally one json file is saved with the name 
 of the output file but with a different extention: .txt, .log and .json. Pre-exitsing files on the output 
-will be deleted before being writtten anew. ffmpeg and ffprobe need to be installed and available on 
+will be deleted before being written anew. ffmpeg and ffprobe need to be installed and available on 
 the path.
 ```
 ## Example:
