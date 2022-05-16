@@ -3,7 +3,7 @@ Python 3.9+ script to combine GoPro videos into one big file using the creation 
 
 The GoPro has a weird file naming system, the numbers can get all over the place and non sequential. This utility combines all the files generated 
 during your recording into one big file ordered by the creation_time field in the metadata. You wil need ffmpeg and ffprobe installed and vaialable 
-on the path, in Debian/Ubuntu platforms install with:
+on the path, on Debian/Ubuntu type platforms install with:
 ```
 $ sudo apt update
 $ sudo apt upgrade
