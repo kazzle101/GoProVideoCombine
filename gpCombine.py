@@ -193,7 +193,7 @@ def main():
               one json file is saved with the name of the output file but with 
               a different extention: .txt, .log and .json.
               
-              Pre-exitsing files on the output will be deleted before being written anew.
+              Pre-existing files on the output will be deleted before being written anew.
 
               ffmpeg and ffprobe need to be installed and available on the path."""
 
