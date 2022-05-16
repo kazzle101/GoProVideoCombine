@@ -47,7 +47,7 @@ def checkDirectoriesAreOK(sourceDir, outputFile):
     if os.path.exists(outputFile):
         os.remove(outputFile)
 
-    ext = [".txt", ".log", ".json", "_id.json", "_dates.json"]
+    ext = [".txt", ".log", ".json", "_numbers.json", "_dates.json"]
     outFile = os.path.splitext(outputFile)[0]
     for e in ext:
         f = outFile+e
