@@ -93,8 +93,11 @@ def makeListOfFiles(sourceDir, outputFile, logMetaData):
                 # print(json.dumps(metadata, indent=4))
                 try:
                     creationDate = metadata["format"]["tags"]["creation_time"]
-                    creationDate = creationDate.split(".")[0]  ## remove the .00000Z from the end
+                    creationDate = creationDate.split(".")[0]  ## remove the .000000Z from the end                   
+                    timeCode = metadata["streams"][0]["tags"]["timecode"]
+                    h, m, s, ms = map(int, timeCode.split(":"))
                     dt = datetime.fromisoformat(creationDate)
+                    dt = dt.replace(hour=h, minute=m, second=s, microsecond=ms)                    
                     data = {"file": source, "date": dt}
                     listOfFiles.append(data)
                     jsonData.append(metadata)
