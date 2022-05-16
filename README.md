@@ -36,7 +36,7 @@ the path.
 ```
 $ python gpCombine.py -s ~/Video\ Recordings/Cycle\ Rides/Chapeltown/ -o chapeltown.mp4 -p -m
 ```
-Output:
+### Output:
 ```
   source dir: ~/Video Recordings/Cycle Rides/Chapeltown/
  output file: ~/Video Recordings/Cycle Rides/Chapeltown/chapeltown.mp4
