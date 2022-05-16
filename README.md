@@ -25,7 +25,7 @@ optional arguments:
                         output dir/filename.mp4
   -p, --srcpath         save the output file to the same location as the source directory
   -m, --logmetadata     save the metadata as a readable json file
-  --delete              delete source files after combining
+  --delete              delete the original GoPro source files after combining
 
 As well as the output.mp4, the files list, a log file and opionally one json file is saved with the name 
 of the output file but with a different extention: .txt, .log and .json. Pre-existing files on the output 
