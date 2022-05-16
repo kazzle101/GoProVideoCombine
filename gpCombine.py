@@ -207,7 +207,7 @@ def main():
     parser.add_argument("-m", "--logmetadata", action='store_true',
                     help="save the metadata as a readable .json file")
     parser.add_argument("--delete", action='store_true',
-                    help="delete source files after combining")
+                    help="delete the original GoPro source files after combining")
 
     args = parser.parse_args()
 
