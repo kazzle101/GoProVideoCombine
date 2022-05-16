@@ -121,8 +121,9 @@ def makeListOfFilesByFileName(sourceDir, outputFile):
             gpfile = os.path.splitext(fn)[0]
             enc = gpfile[0:2]
             if enc.upper() not in onlyThese:
+                continue                
+            if not gpfile[2:].isdigit():
                 continue
-
             metadata = ffprobeFile(source)
             if metadata:
                 jsonData.append(metadata)
