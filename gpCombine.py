@@ -201,11 +201,11 @@ def main():
     parser.add_argument("-s", "--source", type=str,
                     help="source directory containing GoPro .mp4 files", required=True)
     parser.add_argument("-o", "--output", type=str,
-                    help="output dir/file (mp4)", required=True)
+                    help="output dir/filename.mp4", required=True)
     parser.add_argument("-p", "--srcpath", action='store_true',
                     help="save the output file to the same location as the source directory")                    
     parser.add_argument("-m", "--logmetadata", action='store_true',
-                    help="save the metadata as a readable json file")
+                    help="save the metadata as a readable .json file")
     parser.add_argument("--delete", action='store_true',
                     help="delete source files after combining")
 
