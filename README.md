@@ -40,9 +40,10 @@ optional arguments:
   -m, --logmetadata     save the metadata as a readable .json file
   --delete              delete the original GoPro source files after combining
 
-As well as the output.mp4, text, log files and opionally a couple of json files are saved with the name of 
-the output file but with different extentions: .txt, .log and .json. Pre-exitsing files on the output will 
-be deleted before being written anew. ffmpeg and ffprobe need to be installed and available on the path
+As well as the output.mp4, text, log files and opionally a couple of json files are saved with 
+the name of the output file but with different extentions: .txt, .log and .json. Pre-exitsing 
+files on the output will be deleted before being written anew. ffmpeg and ffprobe need to be 
+installed and available on the path.
 ```
 ## Example:
 ```
